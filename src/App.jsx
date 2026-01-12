@@ -371,6 +371,7 @@ export default function App() {
                       alt={award.title}
                       className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                       onError={(e) => {
+                        
                         e.target.style.display = 'none';
                       }}
                     />
