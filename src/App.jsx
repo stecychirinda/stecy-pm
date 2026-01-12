@@ -18,8 +18,8 @@ export default function App() {
   const filteredCerts = certFilter === 'all' ? certs : certs.filter(c => c.category === certFilter);
 
   const awards = [
-    { title: "NexusBiztech Winner", year: "2024", info: "Won for strategic thinking and building a user-focused product roadmap that resonated with judges.", gradient: "from-amber-500/20 to-orange-500/20", border: "border-amber-500/30", accent: "text-amber-400", image: "/biztech.jpg" },
-    { title: "Mastercard Data Challenge", year: "2025", info: "Top finisher in the national data analytics competition; recognized for actionable insights and presentation excellence.", gradient: "from-red-500/20 to-pink-500/20", border: "border-red-500/30", accent: "text-red-400", image: "/data-challenge.jpg" }
+    { title: "NexusBiztech Winner", year: "2024", info: "Won for strategic thinking and building a user-focused product roadmap that resonated with judges.", gradient: "from-blue-500/20 to-cyan-500/20", border: "border-blue-500/30", accent: "text-blue-400", image: "/biztech.jpg" },
+    { title: "Mastercard Data Challenge", year: "2025", info: "Top finisher in the national data analytics competition; recognized for actionable insights and presentation excellence.", gradient: "from-blue-500/20 to-cyan-500/20", border: "border-blue-500/30", accent: "text-blue-400", image: "/data-challenge.jpg" }
   ];
 
   const network = {
@@ -52,7 +52,7 @@ export default function App() {
             initial={{ opacity: 0, x: -20 }} 
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#EB001B] to-[#F79E1B] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-black text-lg">S</span>
             </div>
             <div>
@@ -76,7 +76,7 @@ export default function App() {
                 whileHover={{ y: -2 }}
                 className={`px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 ${
                   activeTab === tab.name
-                    ? 'bg-[#EB001B] text-white shadow-lg shadow-red-600/30'
+                    ? 'bg-blue-600 text-white'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/50'
                 }`}>
                 {tab.name}
@@ -88,7 +88,7 @@ export default function App() {
             href="mailto:chirindastecy@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 bg-gradient-to-r from-[#EB001B] to-[#F79E1B] text-white rounded-lg text-sm font-bold shadow-lg shadow-red-600/30 hover:shadow-xl hover:shadow-red-600/40 transition-all">
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm font-bold hover:bg-blue-700 transition-all">
             Get in Touch
           </motion.a>
         </div>
@@ -114,7 +114,7 @@ export default function App() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.2 }}>
                       <div className="inline-block">
-                        <span className="text-xs font-black uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#EB001B] to-[#F79E1B] mb-4 block">Welcome to My Portfolio</span>
+                        <span className="text-xs font-black uppercase tracking-widest text-blue-600 mb-4 block">Welcome to My Portfolio</span>
                       </div>
                     </motion.div>
                     
@@ -123,7 +123,7 @@ export default function App() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 }}
                       className="text-5xl lg:text-6xl xl:text-7xl font-black leading-tight">
-                      Building <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#EB001B] via-[#F79E1B] to-[#EB001B]">Products<br/>People Love</span>
+                      Building <br/><span className="text-blue-600">Products<br/>People Love</span>
                     </motion.h2>
                     
                     <motion.p 
@@ -143,14 +143,14 @@ export default function App() {
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveTab('AI Certifications')} 
-                        className="px-8 py-3 bg-gradient-to-r from-[#EB001B] to-[#F79E1B] text-white rounded-lg font-bold shadow-lg shadow-red-600/30 hover:shadow-xl hover:shadow-red-600/50 transition-all flex items-center gap-2">
+                        className="px-8 py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-all flex items-center gap-2">
                         View My Expertise <ArrowRight size={18} />
                       </motion.button>
                       <motion.button 
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveTab('How I Think')} 
-                        className="px-8 py-3 border-2 border-gray-300 text-gray-900 rounded-lg font-bold hover:border-red-600 hover:bg-red-50 transition-all">
+                        className="px-8 py-3 border border-gray-300 text-gray-900 rounded-lg font-bold hover:border-blue-600 hover:bg-blue-50 transition-all">
                         My Philosophy
                       </motion.button>
                     </motion.div>
@@ -162,15 +162,15 @@ export default function App() {
                       transition={{ delay: 0.6 }}
                       className="grid grid-cols-3 gap-8 pt-12 border-t border-gray-200">
                       <div>
-                        <div className="text-3xl font-black bg-gradient-to-r from-[#EB001B] to-[#F79E1B] bg-clip-text text-transparent">5+</div>
+                        <div className="text-3xl font-black text-blue-600">5+</div>
                         <p className="text-sm text-gray-600 font-bold mt-1">Certifications</p>
                       </div>
                       <div>
-                        <div className="text-3xl font-black bg-gradient-to-r from-[#EB001B] to-[#F79E1B] bg-clip-text text-transparent">12+</div>
+                        <div className="text-3xl font-black text-blue-600">12+</div>
                         <p className="text-sm text-gray-600 font-bold mt-1">Companies</p>
                       </div>
                       <div>
-                        <div className="text-3xl font-black bg-gradient-to-r from-[#EB001B] to-[#F79E1B] bg-clip-text text-transparent">2</div>
+                        <div className="text-3xl font-black text-blue-600">2</div>
                         <p className="text-sm text-gray-600 font-bold mt-1">Major Wins</p>
                       </div>
                     </motion.div>
@@ -187,13 +187,13 @@ export default function App() {
                       <motion.div 
                         animate={{ 
                           boxShadow: [
-                            "0 0 40px rgba(235, 0, 27, 0.2)",
-                            "0 0 80px rgba(235, 0, 27, 0.3)",
-                            "0 0 40px rgba(235, 0, 27, 0.2)"
+                            "0 0 40px rgba(37, 99, 235, 0.2)",
+                            "0 0 80px rgba(37, 99, 235, 0.3)",
+                            "0 0 40px rgba(37, 99, 235, 0.2)"
                           ]
                         }}
                         transition={{ duration: 4, repeat: Infinity }}
-                        className="absolute -inset-4 bg-gradient-to-r from-[#EB001B] via-[#F79E1B] to-[#EB001B] rounded-full blur-2xl opacity-25"></motion.div>
+                        className="absolute -inset-4 bg-blue-600 rounded-full blur-2xl opacity-20"></motion.div>
                       
                       {/* Circular Headshot Container */}
                       <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-1 ring-gray-200/20">
@@ -268,7 +268,7 @@ export default function App() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <div className="mb-16">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-                  <h2 className="text-4xl lg:text-5xl font-black mb-4">AI & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#EB001B] to-[#F79E1B]">Certifications</span></h2>
+                  <h2 className="text-4xl lg:text-5xl font-black mb-4">AI & <span className="text-blue-600">Certifications</span></h2>
                   <p className="text-lg text-gray-600">Strategic expertise in AI for Product Management</p>
                 </motion.div>
               </div>
@@ -287,7 +287,7 @@ export default function App() {
                     whileTap={{ scale: 0.95 }}
                     className={`px-6 py-2.5 rounded-lg font-bold text-sm transition-all ${
                       certFilter === filter.value
-                        ? 'bg-gradient-to-r from-[#EB001B] to-[#F79E1B] text-white shadow-lg shadow-red-600/30'
+                        ? 'bg-blue-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-gray-900'
                     }`}>
                     {filter.label}
@@ -306,7 +306,7 @@ export default function App() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.08 }}
                       whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                      className="group relative p-8 bg-white border border-gray-200/50 rounded-2xl hover:border-red-400/50 hover:shadow-2xl hover:shadow-red-600/10 transition-all duration-300 flex flex-col">
+                      className="group relative p-8 bg-white border border-gray-200/50 rounded-2xl hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-600/10 transition-all duration-300 flex flex-col">
                       
                       {/* Gradient accent on hover */}
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 via-transparent to-cyan-50/0 group-hover:from-blue-50 group-hover:to-cyan-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none"></div>
@@ -314,7 +314,7 @@ export default function App() {
                       <div className="relative flex-1">
                         {/* Issuer Logo */}
                         {cert.logo && (
-                          <div className="mb-6 flex items-center justify-center h-16 bg-gray-50 rounded-lg p-2 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:to-orange-50 transition-colors">
+                          <div className="mb-6 flex items-center justify-center h-16 bg-gray-50 rounded-lg p-2 group-hover:bg-blue-50 transition-colors">
                             <img
                               src={cert.logo}
                               alt={cert.issuer}
@@ -323,15 +323,15 @@ export default function App() {
                             />
                           </div>
                         )}
-                        <h4 className="font-black text-lg mb-2 text-gray-900 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#EB001B] group-hover:to-[#F79E1B] transition-all">{cert.title}</h4>
+                        <h4 className="font-black text-lg mb-2 text-gray-900 group-hover:text-blue-600 transition-all">{cert.title}</h4>
                         <p className="text-sm text-gray-600 font-semibold mb-4">{cert.issuer}</p>
-                        <div className="flex items-center justify-between pt-6 border-t border-gray-100 group-hover:border-red-200 transition-colors">
+                        <div className="flex items-center justify-between pt-6 border-t border-gray-100 group-hover:border-blue-200 transition-colors">
                           <span className="text-xs text-gray-500 font-bold">{cert.date}</span>
                           {cert.id && (
                             <motion.a 
                               href={cert.url} 
                               whileHover={{ x: 2 }}
-                              className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#EB001B] to-[#F79E1B] hover:gap-2 flex items-center gap-1 transition-all">
+                              className="text-xs font-bold text-blue-600 hover:gap-2 flex items-center gap-1 transition-all">
                               Verify <ExternalLink size={12} />
                             </motion.a>
                           )}
@@ -349,7 +349,7 @@ export default function App() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <div className="mb-16">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-                  <h2 className="text-4xl lg:text-5xl font-black mb-4">Competition <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-500">Wins</span></h2>
+                  <h2 className="text-4xl lg:text-5xl font-black mb-4">Competition <span className="text-blue-600">Wins</span></h2>
                   <p className="text-lg text-gray-600">Recognized for strategic thinking & data-driven insights</p>
                 </motion.div>
               </div>
@@ -403,7 +403,7 @@ export default function App() {
                           <motion.div 
                             initial={{ scale: 0.8 }}
                             animate={{ scale: 1 }}
-                            className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-300 to-orange-500 flex items-center justify-center mb-6 shadow-2xl">
+                            className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center mb-6">
                             <Trophy className="text-white" size={48} />
                           </motion.div>
                           <motion.div
@@ -425,74 +425,84 @@ export default function App() {
           {/* HOW I THINK */}
           {activeTab === 'How I Think' && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="mb-12">
-                <h2 className="text-5xl font-black mb-4">How I <span className="text-blue-600">Think</span></h2>
-                <p className="text-xl text-gray-600">My product philosophy and approach</p>
+              <div className="mb-16">
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+                  <h2 className="text-5xl font-black mb-4 text-gray-900">How I <span className="text-blue-700">Think</span></h2>
+                  <p className="text-lg text-gray-600 max-w-2xl">Thoughtful, user-focused philosophy. Minimal. Editorial. Quietly confident.</p>
+                </motion.div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                {[
-                  {
-                    title: "Why Product?",
-                    icon: Target,
-                    color: "blue",
-                    text: "I'm driven by strategic thinking and the craft of building products that genuinely resonate with users. Creating solutions that solve real problems is everything."
-                  },
-                  {
-                    title: "Why AI?",
-                    icon: Zap,
-                    color: "purple",
-                    text: "AI is reshaping product strategy. I'm forward-thinking and passionate about staying ahead. Learning emerging tech gives us competitive advantage."
-                  },
-                  {
-                    title: "Why Users?",
-                    icon: Heart,
-                    color: "pink",
-                    text: "Users are the heartbeat of every business. I focus on understanding them deeply through data, thoughtful research, and genuine empathy, because their needs shape every meaningful product decision."
-                  }
-                ].map((card, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    className={`p-10 rounded-3xl border-2 transition-all group hover:shadow-xl
-                      ${card.color === 'blue' ? 'bg-blue-50 border-blue-200 hover:border-blue-600' : ''}
-                      ${card.color === 'purple' ? 'bg-purple-50 border-purple-200 hover:border-purple-600' : ''}
-                      ${card.color === 'pink' ? 'bg-pink-50 border-pink-200 hover:border-pink-600' : ''}
-                    `}>
-                    <div className={`flex items-center justify-center w-14 h-14 rounded-lg mb-4 group-hover:scale-110 transition-transform
-                      ${card.color === 'blue' ? 'bg-blue-200' : ''}
-                      ${card.color === 'purple' ? 'bg-purple-200' : ''}
-                      ${card.color === 'pink' ? 'bg-pink-200' : ''}
-                    `}>
-                      <card.icon className={`
-                        ${card.color === 'blue' ? 'text-blue-700' : ''}
-                        ${card.color === 'purple' ? 'text-purple-700' : ''}
-                        ${card.color === 'pink' ? 'text-pink-700' : ''}
-                      `} size={24} />
-                    </div>
-                    <h3 className="text-2xl font-black mb-4 text-gray-900">{card.title}</h3>
-                    <p className="text-gray-700 leading-relaxed">{card.text}</p>
-                  </motion.div>
-                ))}
-              </div>
+              <div className="bg-white rounded-2xl p-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                  {[
+                    {
+                      title: "Why Product?",
+                      icon: Target,
+                      text: "Strategic craft — building useful, durable products that solve real problems. I prioritize clarity of outcome over novelty."
+                    },
+                    {
+                      title: "Why AI?",
+                      icon: Zap,
+                      text: "AI is a practical lever: it scales insight, augments decision-making, and enables new product value when used responsibly."
+                    },
+                    {
+                      title: "Why Users?",
+                      icon: Heart,
+                      text: "Users are the north star. Decisions are grounded in evidence, empathy, and iterative learning — not guesswork."
+                    }
+                  ].map((card, i) => {
+                    const colors = ['blue', 'cyan', 'indigo'];
+                    const color = colors[i];
+                    const bgClasses = {
+                      blue: 'bg-blue-50 hover:bg-blue-100',
+                      cyan: 'bg-cyan-50 hover:bg-cyan-100',
+                      indigo: 'bg-indigo-50 hover:bg-indigo-100'
+                    };
+                    const textClasses = {
+                      blue: 'text-blue-700',
+                      cyan: 'text-cyan-700',
+                      indigo: 'text-indigo-700'
+                    };
+                    const containerClasses = {
+                      blue: 'bg-blue-100',
+                      cyan: 'bg-cyan-100',
+                      indigo: 'bg-indigo-100'
+                    };
 
-              {/* Core Values */}
-              <div className="bg-gray-50 rounded-3xl border-2 border-gray-200 p-12">
-                <h4 className="text-sm font-black uppercase tracking-widest text-gray-500 mb-8">Core Values</h4>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['User-Centric', 'Data-Driven', 'Strategic', 'Collaborative', 'Innovative', 'Humble', 'Curious', 'Impact-Focused'].map((value, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.05 }}
-                      className="p-4 bg-white border-2 border-gray-200 rounded-xl text-center hover:border-blue-600 transition-colors"
-                      whileHover={{ scale: 1.05 }}>
-                      <p className="font-bold text-gray-900">{value}</p>
-                    </motion.div>
-                  ))}
+                    return (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: i * 0.1 }}
+                        className={`p-7 rounded-xl transition-all group ${bgClasses[color]} hover:shadow-lg hover:-translate-y-1`}
+                      >
+                        <div className={`w-12 h-12 rounded-lg ${containerClasses[color]} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                          <card.icon className={`${textClasses[color]}`} size={20} />
+                        </div>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{card.title}</h3>
+                        <p className="text-sm text-gray-700 leading-relaxed">{card.text}</p>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+
+                {/* Core Values */}
+                <div className="pt-8 border-t border-gray-200">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-5">Core Values</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['User-Centric', 'Data-Driven', 'Strategic', 'Collaborative', 'Innovative', 'Humble', 'Curious', 'Impact-Focused'].map((value, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: i * 0.03 }}
+                        className="inline-flex items-center px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-medium text-blue-700 hover:bg-blue-100 transition-colors"
+                      >
+                        {value}
+                      </motion.span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
