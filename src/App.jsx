@@ -428,7 +428,7 @@ export default function App() {
               <div className="mb-16">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
                   <h2 className="text-5xl font-black mb-4 text-gray-900">How I <span className="text-blue-700">Think</span></h2>
-                  <p className="text-lg text-gray-600 max-w-2xl">Thoughtful, user-focused philosophy. Minimal. Editorial. Quietly confident.</p>
+                  <p className="text-lg text-gray-600 max-w-2xl">Turning user insight into clear product decisions.</p>
                 </motion.div>
               </div>
 
@@ -438,17 +438,17 @@ export default function App() {
                     {
                       title: "Why Product?",
                       icon: Target,
-                      text: "Strategic craft — building useful, durable products that solve real problems. I prioritize clarity of outcome over novelty."
+                      text: "I'm driven by strategic thinking and the craft of building products that genuinely resonate with users."
                     },
                     {
                       title: "Why AI?",
                       icon: Zap,
-                      text: "AI is a practical lever: it scales insight, augments decision-making, and enables new product value when used responsibly."
+                      text: "AI is reshaping product strategy. I'm forward-thinking and passionate about staying ahead."
                     },
                     {
                       title: "Why Users?",
                       icon: Heart,
-                      text: "Users are the north star. Decisions are grounded in evidence, empathy, and iterative learning — not guesswork."
+                      text: "Users are the north star of every business. I focus on understanding them deeply through data, thoughtful research, and genuine empathy, because their needs shape every meaningful product decision."
                     }
                   ].map((card, i) => {
                     const colors = ['blue', 'cyan', 'indigo'];
